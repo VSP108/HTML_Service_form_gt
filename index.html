@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../HTML_Service_form_gt/images/logotip2.jpg" height="100" width="220">
+            <h1 class="Автосервис">Автосервис #Garazh_tema</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="forms">Заявка на тех.осмотр</h2>
+            <form>
+                <fieldset>
+                    <legend>Пожалуйста опишите свой автомобиль</legend>
+                        Марка автомобиля <input type="text" name="trademark" placeholder="Введите марку авто">
+                        <br>
+                        <br>
+                        Модель <input type="text" name="model" placeholder="Введите модель авто" required="required">
+                        <p>Коробка передач</p>
+                        АКПП <input type="radio" name="gear" value="auto" checked>
+                        МКПП <input type="radio" name="gear" value="hend">
+                        <br>
+                        <br>
+                        Необходимо проверить
+                        <br>
+                        <input type="checkbox" name="type1" value="brake">Тормозная жидкость<br>
+                        <input type="checkbox" name="type2" value="coolant">Охлаждающаяся жидкость<br>
+                        <input type="checkbox" name="type3" value="motor oil">Масло в двигателе<br>
+                        <input type="checkbox" name="type4" value="transmission oil">Масло в КПП<br>
+                        <input type="checkbox" name="type5" value="suspencion">Подвеска<br>
+                        <br>
+                        Выберите бренд масла<br>
+                        <select name="oillist">
+                            <option label=""></option>
+                            <option label="Shell">Shell</option>
+                            <option label="Motul">Motul</option>
+                            <option label="Castrol">Castrol</option>
+                            <option label="Lukoil" disabled>Lukoil</option>
+                        </select>
+                        <br>
+                        <br>
+                        Цвет подкраски дисков <br>
+                        <input type="color" list="colorlist" value="#cc0000">
+                        <datalist id="colorlist">
+                            <option value="#ff0000" label="Красный"></option>
+                            <option value="#080000" label="Чёрный"></option>
+                            <option value="#0000ff" label="Синий"></option>
+                            <option value="#ffffff" label="Белый"></option>
+                            <option value="#cccccc" label="Серый"></option>
+                        </datalist>
+                        <br>
+                        <br>
+                        Дата визита <br>
+                        <input type="date" name="visit" value="2022-12-25" min="2022-12-27" max="2022-12-30">
+                        <br>
+                        <br>
+                        Ваша почта
+                        <input type="email" name="mail">
+                        <br>
+                        <br>
+                        Ваш телефон
+                        <input type="number" name="phone">
+                        <br>
+                        <br>
+                        <input type="submit" name="submit">
+                        <input type="reset" name="reset">
+                </fieldset>
+                <p>Прогресс тех.осмотра</p>
+                <progress value="25" max="100"></progress>
+                <fieldset>
+                    <legend>Обратная связь</legend>
+                    Оцените качество услуг
+                    <input type="range" min="1" max="10" step="1" value="7"> <br>
+                    <br>
+                    Что бы хотелось улучшить? <br>
+                    <textarea name="comment" id="" cols="45" rows="7" placeholder="Ваши предложения"></textarea>
+                    <br>
+                    Порекомендуете наш сервис?
+                    <label for="yes">Да</label>
+                    <input type="radio" id="yes" name="choise" value="yes" checked>
+                    <label for="no">Нет</label>
+                    <input type="radio" id="no" name="choise" value="no">
+                </fieldset><br>
+                <iframe width="500" height="290" src="https://www.youtube.com/embed/gbYWZ0Z5bC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-block">
+            <center>
+                <p class="footer-text">#Garazh_tema</p>
+            </center>
+        </div>
+    </footer>
+</body>
+</html>
