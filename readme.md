@@ -10,7 +10,7 @@
 
 ## Github Pages
 
-Ссылка на Github Pages, https://vsp108.github.io/HTML_Service_form_gt/
+Ссылка на Github Pages, https://theCryptoVed.github.io/HTML_Service_form_gt/
 
 ## License
 
